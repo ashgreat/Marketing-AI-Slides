@@ -1,0 +1,292 @@
+---
+title: "Consumer Sentiment Analysis with AI"
+editor: source
+author: "Prof. Ashwin Malshe"
+date: "8 July 2025"
+format:
+  revealjs:
+    theme: [default]
+    transition: slide
+    background-transition: fade
+    highlight-style: github
+    code-line-numbers: true
+    slide-number: true
+    chalkboard: true
+    multiplex: true
+---
+
+# What is Sentiment Analysis?
+
+
+**Sentiment Analysis** is the computational study of opinions, sentiments, and emotions expressed in text.
+
+- **Goal**: Determine whether text expresses positive, negative, or neutral sentiment
+- **Also known as**: Opinion mining, emotion AI, opinion extraction
+- **Applications**: Social media monitoring, customer feedback, market research
+
+
+# A Brief History
+
+
+**1950s-1960s**
+
+- Early NLP research
+- Focus on linguistic analysis
+
+**2000s**
+
+- First commercial sentiment analysis tools
+- Rule-based systems dominate
+- Bo Pang & Lillian Lee's foundational papers
+
+# A Brief History
+
+**2010s**
+
+- Machine learning
+- Social media explosion
+- High accuracy
+
+**2020s+**
+
+- Large Language Models (GPT, BERT)
+- Real-time analysis at scale
+- Multimodal sentiment analysis
+
+
+
+# Three Approaches to Sentiment Analysis
+
+## 1. Rule-Based Systems
+
+- **Method**: Predefined dictionaries and linguistic rules
+- **Pros**: Transparent, interpretable, domain-specific customization
+- **Cons**: Limited coverage, struggles with context and sarcasm
+
+```python
+# Example: Simple rule-based approach
+positive_words = ["good", "great", "excellent", "amazing"]
+negative_words = ["bad", "terrible", "awful", "horrible"]
+
+def simple_sentiment(text):
+    words = text.lower().split()
+    pos_count = sum(1 for word in words if word in positive_words)
+    neg_count = sum(1 for word in words if word in negative_words)
+    return "positive" if pos_count > neg_count else "negative"
+```
+
+
+# Machine Learning Approaches
+
+## 2. Traditional ML Methods
+
+- **Method**: Feature extraction + classification algorithms
+- **Common algorithms**: SVM, Naive Bayes, Random Forest
+- **Features**: Bag-of-words, TF-IDF, n-grams
+
+```python
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.svm import SVC
+
+# Traditional ML pipeline
+vectorizer = TfidfVectorizer(max_features=5000)
+X = vectorizer.fit_transform(texts)
+model = SVC(kernel='linear')
+model.fit(X, labels)
+```
+
+**Pros**: Good performance, faster training than deep learning
+**Cons**: Requires feature engineering, limited context understanding
+
+
+# LLM-Based Approaches
+
+## 3. Large Language Models
+
+- **Method**: Pre-trained transformers (BERT, GPT, RoBERTa)
+- **Approach**: Fine-tuning or zero-shot classification
+- **Advantages**: Context awareness, handling of complex language
+
+```python
+# Using transformers library
+from transformers import pipeline
+
+# Zero-shot sentiment analysis
+classifier = pipeline("sentiment-analysis")
+result = classifier("I love this new feature!")
+# Output: [{'label': 'POSITIVE', 'score': 0.9998}]
+```
+
+**Pros**: State-of-the-art accuracy, handles nuance and context
+**Cons**: Computationally expensive, requires more data
+
+
+# Tools Overview: Focus on ChatGPT
+
+## ChatGPT for Sentiment Analysis
+
+:::: {.columns}
+
+::: {.column width="50%"}
+**Capabilities**:
+
+- Zero-shot sentiment classification
+- Aspect-based sentiment analysis
+- Emotion detection beyond positive/negative
+- Explanation of reasoning
+- Batch processing via API
+:::
+
+::: {.column width="50%"}
+**Example Prompt**:
+```
+Analyze the sentiment of this review:
+"The camera quality is amazing, but 
+the battery life is disappointing."
+
+Provide:
+1. Overall sentiment
+2. Aspect-based analysis
+3. Confidence score
+```
+:::
+
+::::
+
+
+# ChatGPT: Practical Implementation
+
+## API Integration Example
+
+```python
+import openai
+
+def analyze_sentiment_chatgpt(text):
+    response = openai.ChatCompletion.create(
+        model="gpt-4",
+        messages=[
+            {"role": "system", "content": "You are a sentiment analysis expert."},
+            {"role": "user", "content": f"Analyze sentiment: {text}"}
+        ],
+        temperature=0.1
+    )
+    return response.choices[0].message.content
+```
+
+**Advantages over traditional tools**:
+
+- No training data required
+- Handles complex, multi-faceted sentiments
+- Provides explanations and confidence levels
+- Works across domains without retraining
+
+
+# Key Marketing Use Cases
+
+## 1. Social Media Monitoring
+
+
+- **Track brand mentions** across platforms
+- **Crisis management**: Detect negative sentiment spikes
+- **Campaign effectiveness**: Measure sentiment during launches
+- **Competitor analysis**: Compare sentiment scores
+
+
+## 2. Customer Feedback Analysis
+
+- **Product reviews**: Identify pain points and strengths
+- **Survey responses**: Quantify qualitative feedback
+- **Support tickets**: Prioritize urgent issues
+- **NPS follow-ups**: Understand reasons behind scores
+
+
+# More Marketing Applications
+
+## 3. Content Performance Optimization
+
+- **A/B testing**: Compare sentiment of different messaging
+- **Email campaigns**: Optimize subject lines and content
+- **Ad copy testing**: Measure emotional response to advertisements
+- **Content calendar**: Plan content based on sentiment trends
+
+## 4. Market Research & Intelligence
+
+- **Trend analysis**: Identify emerging positive/negative topics
+- **Segment analysis**: Understand sentiment across demographics
+- **Pricing strategy**: Gauge reaction to price changes
+- **Product development**: Prioritize features based on sentiment
+
+
+
+# Best Practices & Challenges
+
+## Implementation Tips
+
+:::: {.columns}
+
+::: {.column width="50%"}
+**Do**:
+
+- Validate with human annotators
+- Consider domain-specific training
+- Monitor for bias and fairness
+- Combine multiple approaches
+- Account for sarcasm and context
+:::
+
+::: {.column width="50%"}
+**Don't**:
+
+- Rely solely on automated analysis
+- Ignore cultural and linguistic nuances
+- Neglect data privacy concerns
+- Assume 100% accuracy
+- Forget about emerging slang/expressions
+:::
+
+::::
+
+## Common Challenges
+
+- **Sarcasm detection**: "Great, another system outage 🙄"
+- **Context dependency**: "This movie is sick!" (positive in slang)
+- **Mixed sentiments**: "Good product, terrible customer service"
+- **Neutral vs. objective**: News articles, factual content
+
+
+
+# Thank You
+
+## Questions & Discussion
+
+:::: {.columns}
+
+::: {.column width="60%"}
+**Key Takeaways**:
+
+- Sentiment analysis has evolved from rules to AI
+- ChatGPT offers powerful, accessible sentiment analysis
+- Marketing applications are diverse and valuable
+- Human oversight remains crucial for quality
+:::
+
+::: {.column width="40%"}
+**Connect with me**:
+
+- Email: ashwin.malshe@utsa.edu
+- LinkedIn: /in/ashwinmalshe
+- Twitter: @ashwinmalshe
+:::
+
+::::
+
+---
+
+## Additional Resources
+
+- **Papers**: "Sentiment Analysis and Opinion Mining" by Bing Liu
+- **Tools**: VADER, TextBlob, spaCy, Hugging Face Transformers
+- **Datasets**: IMDB Reviews, Stanford Sentiment Treebank
+- **APIs**: OpenAI, Azure Text Analytics, Google Cloud NLP
+
+*Slides available at: https://github.com/ashgreat/Marketing-AI-Slides*
