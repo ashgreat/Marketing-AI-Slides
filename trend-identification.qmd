@@ -14,6 +14,7 @@ format:
     chalkboard: true
     multiplex: true
     smaller: true
+    scrollable: true
 ---
 
 ## Introduction: Why AI for Trend Spotting?
