@@ -1,0 +1,486 @@
+---
+title: "Trend Identification and Forecasting using AI"
+editor: source
+author: "Prof. Ashwin Malshe"
+date: "8 July 2025"
+format:
+  revealjs:
+    theme: [default]
+    transition: slide
+    background-transition: fade
+    highlight-style: github
+    code-line-numbers: true
+    slide-number: true
+    chalkboard: true
+    multiplex: true
+    smaller: true
+---
+
+## Introduction: Why AI for Trend Spotting?
+
+- Traditional trend research takes weeks or months
+- AI can process thousands of sources in minutes
+- Perfect tool for teaching students modern research skills
+- Helps identify opportunities before they become obvious
+
+**Goal:** Learn practical AI methods for spotting and evaluating emerging trends
+
+
+## What Are Trends? Understanding the Landscape
+
+**Micro vs. Macro Trends:**
+
+- **Micro:** Short-term changes (6-18 months) - like viral TikTok challenges
+- **Macro:** Long-term shifts (3-10 years) - like remote work adoption
+
+**Fads vs. Structural Shifts:**
+
+- **Fads:** Popular but temporary (fidget spinners)
+- **Structural:** Permanent changes to how we live/work (smartphone adoption)
+
+**Key Question:** Which type of trend matters most in marketing?
+
+
+## AI for Trend Identification: The Basics
+
+**What AI Tools Can Do:**
+
+- Scan millions of web pages, forums, and articles instantly
+- Identify patterns humans might miss
+- Synthesize information from diverse sources
+- Surface weak signals before they become obvious
+
+**Popular AI Tools:**
+
+- ChatGPT, Claude, Perplexity
+- Google Bard, Bing Chat
+- Each has different strengths and data sources
+
+
+## How to Use AI for Trend Spotting
+
+**Sample Query:** *"What are emerging trends in plant-based food for Gen Z?"*
+
+**AI will analyze:**
+
+- Social media conversations
+- News articles and blogs
+- Patent filings and startup activity
+- Forum discussions and reviews
+- Academic research papers
+
+**The AI Advantage:** Speed, Scale, and Surprise factor
+
+
+## Key Data Sources AI Monitors
+
+**Where Trends First Appear:**
+
+- **Social platforms:** Reddit, Twitter, TikTok discussions
+- **Innovation hubs:** Patent databases, startup funding news
+- **Niche communities:** Specialized forums and Discord servers
+- **Media signals:** Early adopter publications and blogs
+- **Academic sources:** Research papers and conference proceedings
+
+**Teaching Tip:** Show students how to think like a detective - where would you look first?
+
+
+## Cross-Model Trend Validation
+
+**Why Use Multiple AI Tools?**
+
+- Each AI has different training data and biases
+- Comparing results increases reliability
+- Teaches critical thinking skills
+- Reduces risk of following false signals
+
+**Practical Exercise:**
+
+1. Ask the same trend question to 3 different AI tools
+2. Compare and contrast their responses
+3. Look for common themes and unique insights
+4. Identify conflicting information for further research
+
+
+## Probabilistic Forecasting with AI
+
+**Moving from "What's Trending" to "What's Next"**
+
+**Sample Meta-Prompt:**
+*"Estimate the probability of this trend becoming mainstream by 2030, and its likely impact on the education sector."*
+
+**AI helps with:**
+
+- Scenario planning and "what-if" thinking
+- Estimating likelihood of different outcomes
+- Considering multiple possible futures
+- Connecting trends to specific industries or contexts
+
+---
+
+## Understanding Uncertainty and Impact
+
+**The Forecasting Matrix:**
+
+| | **High Impact** | **Low Impact** |
+|---|---|---|
+| **High Likelihood** | Plan for it | Monitor regularly |
+| **Low Likelihood** | Prepare contingency | Ignore for now |
+
+**Key Insight:** Not all trends are equally important. Focus your attention on high-impact possibilities, regardless of their probability.
+
+---
+
+## Limitations of AI in Trend Forecasting
+
+**What AI Struggles With:**
+
+- **Recency bias:** Overweights recent events
+- **Confirmation bias:** May reinforce existing beliefs
+- **Cultural blind spots:** Heavily weighted toward English/Western sources
+- **Lack of lived experience:** Can't understand nuanced human behavior
+- **Hallucination risk:** May generate convincing but false information
+
+
+---
+
+## Best Practices for Educators
+
+**Teaching Critical AI Literacy:**
+
+1. **Always verify:** Use multiple sources and fact-check key claims
+2. **Question the narrative:** Ask what perspectives might be missing
+3. **Consider the source:** Understand each AI's training data limitations
+4. **Think locally:** Global trends may not apply to your specific context
+5. **Stay skeptical:** Treat AI outputs as starting points, not final answers
+
+
+
+---
+
+## Practical Next Steps
+
+**For Your Classroom:**
+
+- Start with simple trend identification exercises
+- Practice cross-validation with multiple AI tools
+- Teach students to question and verify AI outputs
+- Connect trends to your specific subject area
+- Encourage creative thinking about future implications
+
+**Key Takeaway:** AI democratizes trend research, but human judgment remains essential for meaningful insights.
+
+---
+
+## Questions and Discussion
+
+**Let's Explore:**
+
+- What trends are you most curious about in your field?
+- How might you incorporate these techniques into your teaching?
+- What challenges do you foresee with AI-assisted trend research?
+- How can we help students develop healthy skepticism about AI outputs?
+
+# Forecasting
+
+## Introduction: Why Forecasting Matters in Marketing
+
+**The Marketing Challenge:**
+
+- How many products will we sell next quarter?
+- Which customers are most valuable long-term?
+- What's the best time to launch our campaign?
+- How much should we spend on customer acquisition?
+
+**Forecasting helps answer:** "What's likely to happen next, and how can we prepare?"
+
+## What is Forecasting? The Basics
+
+**Simple Definition:** Using past data to predict future outcomes
+
+**Think of it like weather forecasting:**
+
+- Meteorologists use historical weather patterns
+- They consider current conditions
+- They make educated guesses about tomorrow's weather
+- Marketing forecasting works the same way with business data
+
+**Key Insight:** We're not predicting the future perfectly - we're making informed estimates
+
+
+## Types of Forecasting: Time Horizons
+
+**Short-term (1-3 months):**
+
+- Monthly sales predictions
+- Weekly website traffic
+- Daily social media engagement
+
+**Medium-term (3-12 months):**
+
+- Quarterly revenue forecasts
+- Seasonal demand planning
+- Annual budget planning
+
+**Long-term (1+ years):**
+
+- Customer lifetime value
+- Market size projections
+- Strategic business planning
+
+
+## Simple Forecasting: Moving Averages
+
+**The Concept:** Use the average of recent periods to predict the next period
+
+**Example - Monthly Sales:**
+
+- January: $100,000
+- February: $120,000  
+- March: $110,000
+- **April forecast:** ($100k + $120k + $110k) ÷ 3 = $110,000
+
+**When to use:** Stable, predictable patterns with little seasonality
+
+**Marketing Application:** Basic inventory planning, steady-state campaigns
+
+
+## Trend-Based Forecasting: Linear Regression
+
+**The Concept:** Find the line that best fits your data, then extend it forward
+
+**Simple Example:**
+
+- Month 1: 1,000 customers
+- Month 2: 1,200 customers
+- Month 3: 1,400 customers
+- **Pattern:** Growing by 200 customers per month
+- **Month 4 forecast:** 1,600 customers
+
+**When to use:** Clear upward or downward trends in your data
+
+
+## Understanding Regression in Plain Terms
+
+**What regression does:**
+
+- Finds relationships between different factors
+- Example: "As advertising spend increases, sales tend to increase"
+- Helps predict one thing based on another
+
+**Marketing Example:**
+
+- **Question:** How do email open rates affect sales?
+- **Regression finds:** For every 1% increase in open rates, sales increase by $500
+- **Forecast:** If we improve open rates by 5%, expect $2,500 more in sales
+
+## Seasonal Forecasting: Handling Patterns
+
+**The Challenge:** Many businesses have seasonal patterns
+
+- Retail peaks during holidays
+- B2B software sales dip in summer
+- Restaurants see different patterns by day of week
+
+**Seasonal Adjustment Example:**
+
+- December sales are typically 150% of average
+- If average monthly sales = $100,000
+- December forecast = $100,000 × 1.5 = $150,000
+
+**Key Insight:** Look for repeating patterns in your historical data
+
+
+## Sales Forecasting: Practical Applications
+
+**Bottom-Up Approach:**
+
+1. Forecast individual product sales
+2. Add them together for total sales
+3. Consider sales team capacity and targets
+
+**Top-Down Approach:**
+
+1. Start with overall market size
+2. Estimate your market share
+3. Calculate expected sales volume
+
+**Hybrid Approach:** Combine both methods and compare results
+
+**Pro Tip:** Always include multiple scenarios (best case, worst case, most likely)
+
+
+## Customer Lifetime Value (CLV): The Big Picture
+
+**What is CLV?** The total value a customer brings over their entire relationship with your company
+
+**Simple CLV Formula:**
+
+- Average purchase value × Number of purchases per year × Number of years as customer
+- Example: $50 × 4 purchases/year × 3 years = $600 CLV
+
+**Why it matters:**
+
+- Helps determine how much to spend on customer acquisition
+- Identifies your most valuable customer segments
+- Guides retention strategy investments
+
+
+## Advanced CLV: Considering Churn
+
+**The Reality:** Not all customers stay forever
+
+**Churn Rate:** Percentage of customers who stop buying each period
+
+- If 10% of customers leave each month, average customer lifespan = 10 months
+
+**Improved CLV Calculation:**
+
+- Monthly revenue per customer ÷ Monthly churn rate
+- Example: $20/month ÷ 0.05 (5% churn) = $400 CLV
+
+**Marketing Insight:** Reducing churn by even 1% can dramatically increase CLV
+
+
+## Forecasting Customer Behavior
+
+**Purchase Probability Models:**
+
+- Which customers are most likely to buy next month?
+- Based on: past purchase history, website behavior, demographic data
+
+**Churn Prediction:**
+
+- Which customers are at risk of leaving?
+- Warning signs: decreased usage, support tickets, payment delays
+
+**Segmentation Forecasting:**
+
+- Different customer groups behave differently
+- Forecast each segment separately for better accuracy
+
+
+## Practical Implementation: Getting Started
+
+**Step 1: Data Collection**
+
+- Gather at least 12-24 months of historical data
+- Include relevant factors (seasonality, promotions, external events)
+
+**Step 2: Choose Your Method**
+
+- Simple trends: Moving averages or linear regression
+- Seasonal patterns: Seasonal adjustment
+- Complex relationships: Multiple regression
+
+**Step 3: Validate Your Forecasts**
+
+- Test on historical data you didn't use to build the model
+- Compare predictions to actual results
+
+
+## Tools and Resources
+
+**Beginner-Friendly Tools:**
+
+- **Excel/Google Sheets:** Built-in forecasting functions
+- **Tableau:** Visual forecasting with drag-and-drop
+- **HubSpot/Salesforce:** Built-in sales forecasting features
+
+**Advanced Options:**
+
+- **R/Python:** For custom models and complex analysis
+- **Specialized software:** Anaplan, Forecast Pro, SAS
+
+**Key Principle:** Start simple, then add complexity as you gain experience
+
+
+## Common Forecasting Mistakes to Avoid
+
+**Over-Fitting:** Making models too complex for the data you have
+
+- **Solution:** Keep it simple, especially with limited data
+
+**Ignoring External Factors:** Missing important context
+
+- **Solution:** Consider holidays, economic conditions, competitor actions
+
+**Assuming Past = Future:** Blindly extrapolating trends
+
+- **Solution:** Question whether historical patterns will continue
+
+**Single-Point Forecasts:** Giving only one number
+
+- **Solution:** Always provide ranges and confidence levels
+
+
+## Measuring Forecast Accuracy
+
+**Common Metrics:**
+
+- **Mean Absolute Error (MAE):** Average size of forecast errors
+- **Mean Absolute Percentage Error (MAPE):** Errors as percentage of actual values
+
+**Practical Interpretation:**
+
+- MAPE of 10% means forecasts are typically within 10% of actual results
+- Lower percentages = better forecasting accuracy
+
+**Benchmark:** Compare your forecast accuracy to simple methods (like "next month = this month")
+
+
+## Real-World Marketing Applications
+
+**Campaign Planning:**
+
+- Forecast response rates for different channels
+- Optimize budget allocation across campaigns
+- Predict ROI before launching initiatives
+
+**Inventory Management:**
+
+- Forecast demand to avoid stockouts or overstock
+- Plan seasonal inventory levels
+- Optimize warehouse space and costs
+
+**Customer Acquisition:**
+
+- Predict cost per acquisition across different channels
+- Forecast customer quality and lifetime value
+- Plan acquisition spending and targets
+
+
+## Building a Forecasting Culture
+
+**For Your Organization:**
+
+1. **Start small:** Begin with one key metric
+2. **Track accuracy:** Measure how well your forecasts perform
+3. **Iterate regularly:** Update forecasts as new data comes in
+4. **Communicate uncertainty:** Always discuss forecast ranges, not just point estimates
+5. **Learn from mistakes:** Analyze why forecasts were wrong
+
+**Remember:** Good forecasting is a skill that improves with practice
+
+
+## Questions and Next Steps
+
+**Discussion Points:**
+
+- What marketing metrics would be most valuable to forecast in your organization?
+- What data do you currently have that could support forecasting efforts?
+- How might better forecasting change your marketing decision-making?
+- What tools or training would help you implement forecasting?
+
+**Action Items:**
+
+- Identify one key metric to start forecasting
+- Gather historical data for that metric
+- Choose a simple forecasting method to begin with
+
+
+## Connect with Me
+
+- Email: ashwin.malshe@utsa.edu
+- LinkedIn: /in/ashwinmalshe
+- Twitter: @ashwinmalshe

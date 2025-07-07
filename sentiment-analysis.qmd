@@ -13,6 +13,7 @@ format:
     slide-number: true
     chalkboard: true
     multiplex: true
+    smaller: true
 ---
 
 # What is Sentiment Analysis?
@@ -96,6 +97,7 @@ model.fit(X, labels)
 ```
 
 **Pros**: Good performance, faster training than deep learning
+
 **Cons**: Requires feature engineering, limited context understanding
 
 
@@ -118,6 +120,7 @@ result = classifier("I love this new feature!")
 ```
 
 **Pros**: State-of-the-art accuracy, handles nuance and context
+
 **Cons**: Computationally expensive, requires more data
 
 

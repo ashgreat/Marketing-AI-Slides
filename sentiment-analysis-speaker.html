@@ -290,7 +290,8 @@ Prof.&nbsp;Ashwin Malshe
 <span id="cb2-6"><a href=""></a>X <span class="op">=</span> vectorizer.fit_transform(texts)</span>
 <span id="cb2-7"><a href=""></a>model <span class="op">=</span> SVC(kernel<span class="op">=</span><span class="st">'linear'</span>)</span>
 <span id="cb2-8"><a href=""></a>model.fit(X, labels)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><strong>Pros</strong>: Good performance, faster training than deep learning <strong>Cons</strong>: Requires feature engineering, limited context understanding</p>
+<p><strong>Pros</strong>: Good performance, faster training than deep learning</p>
+<p><strong>Cons</strong>: Requires feature engineering, limited context understanding</p>
 </section></section>
 <section>
 <section id="llm-based-approaches" class="title-slide slide level1 center">
@@ -311,7 +312,8 @@ Prof.&nbsp;Ashwin Malshe
 <span id="cb3-5"><a href=""></a>classifier <span class="op">=</span> pipeline(<span class="st">"sentiment-analysis"</span>)</span>
 <span id="cb3-6"><a href=""></a>result <span class="op">=</span> classifier(<span class="st">"I love this new feature!"</span>)</span>
 <span id="cb3-7"><a href=""></a><span class="co"># Output: [{'label': 'POSITIVE', 'score': 0.9998}]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><strong>Pros</strong>: State-of-the-art accuracy, handles nuance and context <strong>Cons</strong>: Computationally expensive, requires more data</p>
+<p><strong>Pros</strong>: State-of-the-art accuracy, handles nuance and context</p>
+<p><strong>Cons</strong>: Computationally expensive, requires more data</p>
 </section></section>
 <section>
 <section id="tools-overview-focus-on-chatgpt" class="title-slide slide level1 center">
@@ -529,7 +531,7 @@ Provide:
 'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"8\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
 'chalkboard': {"buttons":true},
 'multiplex': {"secret":"17518364796143015712","id":"c54eb28835f76f6a","url":"https://reveal-multiplex.glitch.me/"},
-'smaller': false,
+'smaller': true,
  
         // Display controls in the bottom right corner
         controls: false,
