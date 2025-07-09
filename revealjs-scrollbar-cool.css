@@ -1,0 +1,238 @@
+/* Force visible scrollbars in Quarto revealjs presentations */
+
+/* Override revealjs default overflow settings */
+.reveal .slides section {
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    max-height: 100vh !important;
+}
+
+/* Beautiful scrollbars for slides - Webkit browsers */
+.reveal .slides section::-webkit-scrollbar {
+    width: 8px !important;
+    background: transparent !important;
+}
+
+.reveal .slides section::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-radius: 4px !important;
+    margin: 5px 0 !important;
+}
+
+.reveal .slides section::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #667eea 0%, #764ba2 100%) !important;
+    border-radius: 4px !important;
+    min-height: 20px !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important;
+}
+
+.reveal .slides section::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, #5a6fd8 0%, #6a4190 100%) !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
+}
+
+.reveal .slides section::-webkit-scrollbar-thumb:active {
+    background: linear-gradient(45deg, #4e60c6 0%, #5e377e 100%) !important;
+}
+
+/* Firefox scrollbar styling - elegant thin style */
+.reveal .slides section {
+    scrollbar-width: thin !important;
+    scrollbar-color: #667eea rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Beautiful scrollbars for content containers */
+.reveal .slide-content,
+.reveal .panel-tabset,
+.reveal .cell-output,
+.reveal .sourceCode,
+.reveal .column,
+.reveal .columns {
+    overflow-y: auto !important;
+    scrollbar-width: thin !important;
+    scrollbar-color: #667eea rgba(255, 255, 255, 0.1) !important;
+}
+
+.reveal .slide-content::-webkit-scrollbar,
+.reveal .panel-tabset::-webkit-scrollbar,
+.reveal .cell-output::-webkit-scrollbar,
+.reveal .sourceCode::-webkit-scrollbar,
+.reveal .column::-webkit-scrollbar,
+.reveal .columns::-webkit-scrollbar {
+    width: 8px !important;
+    background: transparent !important;
+}
+
+.reveal .slide-content::-webkit-scrollbar-track,
+.reveal .panel-tabset::-webkit-scrollbar-track,
+.reveal .cell-output::-webkit-scrollbar-track,
+.reveal .sourceCode::-webkit-scrollbar-track,
+.reveal .column::-webkit-scrollbar-track,
+.reveal .columns::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-radius: 4px !important;
+    margin: 5px 0 !important;
+}
+
+.reveal .slide-content::-webkit-scrollbar-thumb,
+.reveal .panel-tabset::-webkit-scrollbar-thumb,
+.reveal .cell-output::-webkit-scrollbar-thumb,
+.reveal .sourceCode::-webkit-scrollbar-thumb,
+.reveal .column::-webkit-scrollbar-thumb,
+.reveal .columns::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #667eea 0%, #764ba2 100%) !important;
+    border-radius: 4px !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important;
+}
+
+.reveal .slide-content::-webkit-scrollbar-thumb:hover,
+.reveal .panel-tabset::-webkit-scrollbar-thumb:hover,
+.reveal .cell-output::-webkit-scrollbar-thumb:hover,
+.reveal .sourceCode::-webkit-scrollbar-thumb:hover,
+.reveal .column::-webkit-scrollbar-thumb:hover,
+.reveal .columns::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, #5a6fd8 0%, #6a4190 100%) !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Elegant scrollbars for all elements */
+.reveal * {
+    scrollbar-width: thin !important;
+    scrollbar-color: #667eea rgba(255, 255, 255, 0.1) !important;
+}
+
+.reveal *::-webkit-scrollbar {
+    width: 8px !important;
+    height: 8px !important;
+    background: transparent !important;
+}
+
+.reveal *::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-radius: 4px !important;
+    margin: 2px 0 !important;
+}
+
+.reveal *::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #667eea 0%, #764ba2 100%) !important;
+    border-radius: 4px !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important;
+}
+
+.reveal *::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, #5a6fd8 0%, #6a4190 100%) !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Ensure content doesn't hide behind scrollbars */
+.reveal .slides section {
+    padding-right: 20px !important;
+}
+
+/* Make sure overflow is set correctly on the main slide container */
+.reveal .slides {
+    overflow: visible !important;
+}
+
+.reveal .slides > section {
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+}
+
+/* Elegant scrollbars for cells */
+.reveal .cell::-webkit-scrollbar {
+    width: 8px !important;
+    background: transparent !important;
+}
+
+.reveal .cell::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-radius: 4px !important;
+    margin: 5px 0 !important;
+}
+
+.reveal .cell::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #667eea 0%, #764ba2 100%) !important;
+    border-radius: 4px !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important;
+}
+
+.reveal .cell::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, #5a6fd8 0%, #6a4190 100%) !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Target specific Quarto elements that might contain scrollable content */
+.reveal .cell {
+    overflow-y: auto !important;
+    max-height: 80vh !important;
+    scrollbar-width: thin !important;
+    scrollbar-color: #667eea rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Beautiful scrollbars for code blocks */
+.reveal pre {
+    overflow-y: auto !important;
+    max-height: 70vh !important;
+    scrollbar-width: thin !important;
+    scrollbar-color: #667eea rgba(0, 0, 0, 0.2) !important;
+}
+
+.reveal pre::-webkit-scrollbar {
+    width: 8px !important;
+    background: transparent !important;
+}
+
+.reveal pre::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2) !important;
+    border-radius: 4px !important;
+    margin: 5px 0 !important;
+}
+
+.reveal pre::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #667eea 0%, #764ba2 100%) !important;
+    border-radius: 4px !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) !important;
+}
+
+.reveal pre::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, #5a6fd8 0%, #6a4190 100%) !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Elegant visual indicator that content is scrollable */
+.reveal .slides section[data-scrollable="true"]::after,
+.reveal .slides section.scrollable::after {
+    content: "⇅ Scroll for more content";
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: linear-gradient(45deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    z-index: 999;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+    animation: gentlePulse 3s ease-in-out infinite;
+}
+
+@keyframes gentlePulse {
+    0%, 100% { opacity: 0.8; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.05); }
+}
+
+/* Force browser to show scrollbars */
+html {
+    overflow-y: scroll !important;
+}
+
+/* Override any revealjs theme that might be hiding scrollbars */
+.reveal {
+    overflow: visible !important;
+}
+
+.reveal .progress {
+    z-index: 1000 !important;
+}

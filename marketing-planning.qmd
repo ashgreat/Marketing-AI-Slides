@@ -1,0 +1,264 @@
+---
+title: "Marketing Planning"
+editor: source
+author: "Prof. Ashwin Malshe"
+date: "9 July 2025"
+format:
+  revealjs:
+    css: revealjs-scrollbar.css
+    theme: [default]
+    transition: slide
+    background-transition: fade
+    highlight-style: github
+    code-line-numbers: true
+    slide-number: true
+    chalkboard: true
+    smaller: true
+    scrollable: true
+    scrollProgress: true
+---
+## What is a Marketing Plan?
+
+A marketing plan is a comprehensive document that outlines:
+
+- **Strategic roadmap** for achieving marketing objectives
+- **Target audience identification** and segmentation
+- **Marketing mix decisions** (4 Ps: Product, Price, Place, Promotion)
+- **Budget allocation** and resource planning
+- **Timeline and milestones** for implementation
+- **Performance metrics** and evaluation methods
+
+A well-crafted marketing plan serves as the foundation for all marketing activities and ensures alignment with business goals.
+
+
+## Key Components of a Marketing Plan
+
+### 1. Executive Summary
+
+Brief overview of the entire plan and key recommendations
+
+### 2. Situation Analysis
+
+- Market research and competitive landscape
+- SWOT analysis (Strengths, Weaknesses, Opportunities, Threats)
+- Customer analysis and personas
+
+### 3. Marketing Objectives
+
+- Specific, measurable, achievable, relevant, time-bound (SMART) goals
+- Both quantitative and qualitative targets
+
+
+
+## SMART Marketing Objectives
+
+### Setting Effective Goals
+
+SMART objectives are a framework for setting effective goals. The acronym SMART stands for:
+
+**S - Specific**: The objective should be clear and precise about what you want to accomplish. Instead of "increase sales," a specific objective would be "increase product line A sales in the Northeast region."
+
+**M - Measurable**: The objective should include concrete criteria for measuring progress and success. This answers the questions of "how much" or "how many." For example, "increase product line A sales by 15%."
+
+**A - Achievable**: The objective should be realistic and attainable with the resources and capabilities available. While objectives should be challenging, they shouldn't be impossible to achieve.
+
+**R - Relevant**: The objective should align with broader business goals and be worthwhile for the organization. It should matter to the company and contribute to its overall strategy.
+
+**T - Time-bound**: The objective should specify a timeframe for achievement. This creates urgency and helps with planning. For example, "increase product line A sales by 15% within the next fiscal quarter."
+
+
+
+## Market Analysis & Research
+
+### Understanding Your Market Environment
+
+**Market Size & Growth**
+
+- Total addressable market (TAM)
+- Serviceable addressable market (SAM)
+- Market trends and projections
+
+**Competitive Analysis**
+
+- Direct and indirect competitors
+- Competitive advantages and positioning
+- Market share analysis
+
+**Customer Insights**
+
+- Demographics, psychographics, and behavioral patterns
+- Customer journey mapping
+- Pain points and unmet needs
+
+
+## Target Audience & Segmentation
+
+### Defining Your Ideal Customer
+
+**Segmentation Criteria**
+
+- Geographic (location, climate, region)
+- Demographic (age, income, education, occupation)
+- Psychographic (lifestyle, values, interests)
+- Behavioral (usage patterns, brand loyalty, benefits sought)
+
+**Creating Customer Personas**
+
+- Detailed profiles of ideal customers
+- Include demographics, motivations, challenges, and preferences
+- Use data-driven insights, not assumptions
+
+**Targeting Strategy**
+
+- Primary vs. secondary target markets
+- Market penetration vs. market development approaches
+
+
+## Marketing Mix Strategy (4 Ps)
+
+### Product Strategy
+
+- Core product features and benefits
+- Product differentiation and positioning
+- Product lifecycle considerations
+
+### Pricing Strategy
+
+- Pricing models (cost-plus, value-based, competitive)
+- Price positioning in the market
+- Pricing tactics and promotions
+
+### Place (Distribution) Strategy
+
+- Distribution channels and partnerships
+- Geographic coverage and market reach
+- Online vs. offline presence
+
+### Promotion Strategy
+
+- Integrated marketing communications
+- Media mix and channel selection
+- Message development and creative strategy
+
+## Budget Planning & Resource Allocation
+
+### Marketing Budget Fundamentals
+
+**Budget Allocation Methods**
+
+- Percentage of sales method
+- Competitive parity approach
+- Objective and task method
+- Affordable method
+
+**Cost Categories**
+
+- Advertising and media costs
+- Content creation and creative development
+- Marketing technology and tools
+- Personnel and agency costs
+- Events and promotional activities
+
+**ROI Planning**
+
+- Expected return on marketing investment
+- Break-even analysis
+- Performance benchmarks
+
+
+## Implementation Timeline
+
+### Creating Your Marketing Calendar
+
+**Strategic Planning**
+
+- Annual marketing calendar development
+- Campaign planning and sequencing
+- Resource allocation timeline
+
+**Tactical Execution**
+
+- Monthly and weekly activity schedules
+- Content calendar and publication schedule
+- Campaign launch dates and deadlines
+
+**Milestone Tracking**
+
+- Key performance indicators (KPIs)
+- Review and adjustment periods
+- Reporting schedules
+
+
+## Performance Measurement & Analytics
+
+### Tracking Marketing Success
+
+**Key Performance Indicators (KPIs)**
+
+- Brand awareness metrics
+- Lead generation and conversion rates
+- Customer acquisition cost (CAC)
+- Customer lifetime value (CLV)
+- Return on marketing investment (ROMI)
+
+**Analytics Tools and Methods**
+
+- Web analytics (Google Analytics, Adobe Analytics)
+- Social media analytics
+- Email marketing metrics
+- Sales attribution modeling
+
+**Continuous Improvement**
+
+- Regular performance reviews
+- A/B testing and optimization
+- Strategy adjustments based on data
+
+
+## Common Marketing Plan Mistakes
+
+### What to Avoid
+
+**Planning Pitfalls**
+
+- Lack of clear, measurable objectives
+- Insufficient market research and customer insights
+- Unrealistic budget expectations
+- Poor integration between marketing channels
+
+**Execution Challenges**
+
+- Inadequate timeline planning
+- Lack of stakeholder buy-in
+- Insufficient performance tracking
+- Failure to adapt to market changes
+
+**Best Practices**
+
+- Start with thorough research and analysis
+- Ensure alignment with business objectives
+- Build in flexibility for adjustments
+- Maintain consistent brand messaging across all channels
+
+
+## Conclusion: Building Your Marketing Plan
+
+### Next Steps for Success
+
+**Remember the Fundamentals**
+
+- Know your market, customers, and competition
+- Set clear, measurable objectives
+- Develop integrated strategies across all marketing mix elements
+- Plan for measurement and continuous improvement
+
+**Action Items**
+
+1. Conduct thorough market research
+2. Define target audience and create personas
+3. Develop integrated marketing strategy
+4. Create implementation timeline and budget
+5. Establish measurement framework
+6. Begin execution with regular review cycles
+
+A well-executed marketing plan is your roadmap to achieving marketing success and driving business growth.

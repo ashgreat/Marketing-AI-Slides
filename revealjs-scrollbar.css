@@ -1,0 +1,182 @@
+/* Force visible scrollbars in Quarto revealjs presentations */
+
+/* Override revealjs default overflow settings */
+.reveal .slides section {
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    max-height: 100vh !important;
+}
+
+/* Force scrollbars to always be visible - Webkit browsers */
+.reveal .slides section::-webkit-scrollbar {
+    width: 16px !important;
+    background: rgba(0, 0, 0, 0.1) !important;
+    border-radius: 8px !important;
+}
+
+.reveal .slides section::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1) !important;
+    border-radius: 8px !important;
+    border: 1px solid rgba(0, 0, 0, 0.2) !important;
+}
+
+.reveal .slides section::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.5) !important;
+    border-radius: 8px !important;
+    border: 2px solid rgba(255, 255, 255, 0.3) !important;
+    min-height: 20px !important;
+}
+
+.reveal .slides section::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.7) !important;
+}
+
+.reveal .slides section::-webkit-scrollbar-thumb:active {
+    background: rgba(0, 0, 0, 0.9) !important;
+}
+
+/* Firefox scrollbar styling */
+.reveal .slides section {
+    scrollbar-width: auto !important;
+    scrollbar-color: rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Alternative approach: Force scrollbar on specific content containers */
+.reveal .slide-content,
+.reveal .panel-tabset,
+.reveal .cell-output,
+.reveal .sourceCode,
+.reveal .column,
+.reveal .columns {
+    overflow-y: auto !important;
+    scrollbar-width: auto !important;
+    scrollbar-color: rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0.1) !important;
+}
+
+.reveal .slide-content::-webkit-scrollbar,
+.reveal .panel-tabset::-webkit-scrollbar,
+.reveal .cell-output::-webkit-scrollbar,
+.reveal .sourceCode::-webkit-scrollbar,
+.reveal .column::-webkit-scrollbar,
+.reveal .columns::-webkit-scrollbar {
+    width: 14px !important;
+    background: rgba(0, 0, 0, 0.1) !important;
+}
+
+.reveal .slide-content::-webkit-scrollbar-thumb,
+.reveal .panel-tabset::-webkit-scrollbar-thumb,
+.reveal .cell-output::-webkit-scrollbar-thumb,
+.reveal .sourceCode::-webkit-scrollbar-thumb,
+.reveal .column::-webkit-scrollbar-thumb,
+.reveal .columns::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.5) !important;
+    border-radius: 7px !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Very aggressive approach - force on all potential containers */
+.reveal * {
+    scrollbar-width: auto !important;
+}
+
+.reveal *::-webkit-scrollbar {
+    width: 12px !important;
+    height: 12px !important;
+}
+
+.reveal *::-webkit-scrollbar-track {
+    background: rgba(200, 200, 200, 0.3) !important;
+    border-radius: 6px !important;
+}
+
+.reveal *::-webkit-scrollbar-thumb {
+    background: rgba(100, 100, 100, 0.8) !important;
+    border-radius: 6px !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Ensure content doesn't hide behind scrollbars */
+.reveal .slides section {
+    padding-right: 20px !important;
+}
+
+/* Make sure overflow is set correctly on the main slide container */
+.reveal .slides {
+    overflow: visible !important;
+}
+
+.reveal .slides > section {
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+}
+
+/* Target specific Quarto elements that might contain scrollable content */
+.reveal .cell {
+    overflow-y: auto !important;
+    max-height: 80vh !important;
+}
+
+.reveal .cell::-webkit-scrollbar {
+    width: 12px !important;
+    background: rgba(0, 0, 0, 0.1) !important;
+}
+
+.reveal .cell::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.5) !important;
+    border-radius: 6px !important;
+}
+
+/* For code blocks specifically */
+.reveal pre {
+    overflow-y: auto !important;
+    max-height: 70vh !important;
+    scrollbar-width: auto !important;
+    scrollbar-color: rgba(255, 255, 255, 0.5) rgba(0, 0, 0, 0.3) !important;
+}
+
+.reveal pre::-webkit-scrollbar {
+    width: 12px !important;
+    background: rgba(0, 0, 0, 0.3) !important;
+}
+
+.reveal pre::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.5) !important;
+    border-radius: 6px !important;
+}
+
+/* Visual indicator that content is scrollable */
+.reveal .slides section[data-scrollable="true"]::after,
+.reveal .slides section.scrollable::after {
+    content: "⇅ Scroll for more content ⇅";
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    z-index: 999;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 0.6; }
+    50% { opacity: 1; }
+    100% { opacity: 0.6; }
+}
+
+/* Force browser to show scrollbars */
+html {
+    overflow-y: scroll !important;
+}
+
+/* Override any revealjs theme that might be hiding scrollbars */
+.reveal {
+    overflow: visible !important;
+}
+
+.reveal .progress {
+    z-index: 1000 !important;
+}
